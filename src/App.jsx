@@ -27,7 +27,6 @@ function App() {
       />
       <Button onClick={handleAddTodo}>Ajouter</Button>
       <ListGroup>
-        <Form.Label>Tâches terminées</Form.Label>
         {todos.map((todo) => (
           <ListGroup.Item
             key={todo.id}
@@ -36,7 +35,7 @@ function App() {
             {todo.text}
           </ListGroup.Item>
         ))}
-
+        <Form.Label>Tâches terminées</Form.Label>
         <ListGroup.Item>
           {completedTodos.map((todo) => (
             <li key={todo.id}>{todo.text}</li>
