@@ -36,7 +36,7 @@ function App() {
             {todo.text}
           </ListGroup.Item>
         ))}
-        
+
         <ListGroup.Item>
           {completedTodos.map((todo) => (
             <li key={todo.id}>{todo.text}</li>
